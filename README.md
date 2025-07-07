@@ -1,16 +1,20 @@
 # Phishing Email Analyzer
 
-## Proposed Project Idea
+## Project Summary
 
-My proposed project is a **Phishing Email Analyzer**, a tool designed to help users assess the likelihood of phishing in suspicious emails. The application will allow users to input essential details such as the sender, subject, body, and an URL within the email. The system will then scan for phishing indicators using *three primary detectors*: 
+My proposed project is a **Phishing Email Analyzer**, a tool designed to help users assess the likelihood of phishing in suspicious emails. The application will allow users to input essential details such as the sender, subject, body, and any URL within the email. The system will then scan for phishing indicators using *three primary detectors*: 
 - **Common phishing keyword analysis in the Subject:** Identifies common phishing terms (e.g., "urgent", "verify now", "limited offer"), assigning 10 points if empty and 30 points for identification.
-- **URL inspection for non-ASCII characters:** contributing 25 points when character detected.
+- **URL inspection for non-ASCII characters:** contributing 25 points when characters are detected.
 - **Content-length analysis of the Body:** Evaluates the email body by assigning 15 points if empty and 25 points if shorter than 90 characters.
-to identify phishing. Each detector contributes to a combined **phishing risk score**, and emails with scores *greater than or equal to 40%* are flagged and stored for future reference in a collection of emails. The system provides detailed reports that include the overall risk score, flagged status, and the major indicator contributing most significantly to the score. Additionally, summary statistics are presented, showing the distribution of flagged emails by indicator and the overall percentage of emails flagged.
+Each detector contributes to a combined **phishing risk score**, and emails with scores *greater than or equal to 40%* are flagged and stored in a collection of suspicious emails. The system provides detailed reports that include the overall risk score, flagged status, and the major contributing indicator.
 
-This application is designed for anyone concerned about potential phishing attacks from suspicious emails. It can be used in various contexts, including by companies for *organizational security or by individuals for personal protection*. The tool is particularly helpful when assessing emails from potentially fraudulent accounts, such as those claiming to be from banks, payment services, or other sensitive sources.
+Building on this, the tool will also feature **detailed reporting capabilities to provide users with insights into phishing patterns and trends**, mimicking established email security protocols such as **DMARC, SPF, and DKIM**. This aims to offer a more comprehensive analysis and educate users on how real-world email security standards operate.
 
-This project interests me because it aligns with my passion for cybersecurity and my goal to develop tools that empower users to safeguard themselves against online threats. Phishing remains one of the most common and dangerous forms of cybercrime, and I want to contribute to combating it by **creating an accessible and user-friendly tool**. Through this project, I aim to apply my technical skills to address real-world security challenges, deepen my understanding of cybersecurity threats and defences, and work toward pursuing a career in this field one day.
+In addition, users can view summary statistics showing the distribution of flagged emails by indicator and the overall percentage of emails identified as phishing.
+
+This application is intended for a broad audience — *from individuals seeking personal protection to organizations aiming to enhance email security protocols*. It is especially useful for assessing emails that appear to be from sensitive or high-risk sources, such as banks or payment services.
+
+This project interests me because it aligns with my passion for cybersecurity and my goal to develop tools that empower users to safeguard themselves against online threats. Phishing remains one of the most common and dangerous forms of cybercrime, and I want to contribute to combating it by **creating an accessible and user-friendly tool**. Through this initiative, I aim to apply my technical skills to address real-world security challenges, deepen my understanding of cybersecurity threats and defences, and take steps toward a future career in cybersecurit.
  
  ## User Stories
 
